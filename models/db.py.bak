@@ -20,7 +20,7 @@ myconf = AppConfig(reload=True)
 ##    db = DAL(myconf.take('db.uri'), pool_size=myconf.take('db.pool_size', cast=int), check_reserved=['all'])
 ##else:
     ## connect to Google BigTable (optional 'google:datastore://namespace')
-db = DAL('mysql://root:1234@10.56.220.221/ayd2')
+db = DAL('mysql://root:1234@10.56.220.221/usac')
     ## store sessions and tickets there
 session.connect(request, response, db=db)
     ## or store session in Memcache, Redis, etc.
